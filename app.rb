@@ -8,7 +8,7 @@ class App < Sinatra::Base
   end
 
   get '/square/:name' do
-    
+
   end
 
 end
