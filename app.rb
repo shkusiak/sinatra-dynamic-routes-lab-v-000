@@ -30,8 +30,19 @@ class App < Sinatra::Base
     number_1 = params[:number1]
     number_2 = params[:number2]
 
-    
-    
+    op = params[:operation]
+
+    if op == "add"
+      "#{number_1 + number_2}"
+    elsif op == "subtract"
+      "#{number_1 - number_2}"
+    elsif op == "multiply"
+      "#{number_1 * number_2}"
+    elsif op == "divide"
+      "#{number_1/number_2}"
+    end
+
+
   end
 
 end
